@@ -6,7 +6,7 @@ This project is a work in progress, but it currently contains:
 * Inventory utilities
 * File management
 
-## Maven
+## Importing
 This API can be included via Maven:
 ```xml
 <repositories>
@@ -20,10 +20,20 @@ This API can be included via Maven:
     <dependency>
         <groupId>me.ezrichards</groupId>
         <artifactId>PluginAPI</artifactId>
-        <version>1.0.1</version>
+        <version>1.0.3</version>
     </dependency>
 </dependencies>
 ```
+or via Gradle:
+```groovy
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+dependencies {
+    compileOnly "com.github.ezrichards:PluginAPI:1.0.3"
+}
+```
+
 ## API Reference
 ### File Management
 In order to use the file management system, you need to initialize the utility with the name of your plugin as a parameter. 
