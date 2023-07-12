@@ -30,7 +30,7 @@ repositories {
     maven { url 'https://jitpack.io' }
 }
 dependencies {
-    compileOnly "com.github.ezrichards:PluginAPI:1.0.3"
+    compileOnly "com.github.ezrichards:PluginAPI:1.0.4"
 }
 ```
 
