@@ -20,7 +20,7 @@ This API can be included via Maven:
     <dependency>
         <groupId>me.ezrichards</groupId>
         <artifactId>PluginAPI</artifactId>
-        <version>1.0.3</version>
+        <version>1.0.4</version>
     </dependency>
 </dependencies>
 ```

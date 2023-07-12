@@ -1,11 +1,13 @@
 package me.erichards.pluginapi.item;
 
+import net.kyori.adventure.text.Component;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * Made by Ethan Richards
@@ -21,18 +23,17 @@ public class ItemBuilder {
     public ItemBuilder(Material material, int amount) {
         this.material = material;
         this.amount = amount;
-
         this.itemStack = new ItemStack(material, amount);
         this.itemMeta = itemStack.getItemMeta();
     }
 
-    public ItemBuilder setDisplayName(String name) {
-        itemMeta.setDisplayName(name);
+    public ItemBuilder setDisplayName(Component name) {
+        itemMeta.displayName(name);
         return this;
     }
 
-    public ItemBuilder setLore(String... lore) {
-        itemMeta.setLore(Arrays.asList(lore));
+    public ItemBuilder setLore(List<Component> lore) {
+        itemMeta.lore(lore);
         return this;
     }
 

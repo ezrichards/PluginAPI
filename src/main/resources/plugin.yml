@@ -1,4 +1,4 @@
 name: PluginAPI
-version: 1.0.0
+version: 1.0.4
 main: me.erichards.pluginapi.PluginAPI
-api-version: '1.19'
+api-version: '1.20'
